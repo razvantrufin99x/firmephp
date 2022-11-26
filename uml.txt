@@ -1,0 +1,49 @@
+
+dazadedate
+ dbfirme
+
+tabele
+    domenii
+		idDomeniu	int
+		domeniu		varchar
+		
+	subdomenii
+		idSubdomeniu	int
+		idDomeniu	int
+		subdomeniu	varchar
+			
+	categorii
+		idCategoria	int
+		idSubdomeniu	int
+		categoria	varchar
+		
+	subiecte
+		idSubiect	int
+		idCategoria	int
+		subiect		varchar
+
+	firme	
+		idFirma		int
+		idSubiect	int
+		firma		varchar
+		cui		varchar
+		adresa		varchar
+		logo		varchar
+		telefon		varchar
+		mobil		varchar
+		fax		varchar
+		email		varchar
+		info		varchar
+		
+        
+        INSERT INTO `dbfirme`.`domenii` (`idDomeniu`, `domeniu`) VALUES ('1', 'testarebazadedate');
+        
+        INSERT INTO `dbfirme`.`subdomenii` (`idSubdomeniu`, `idDomeniu`, `subdomeniu`) VALUES ('1', '1', 'subdomeniutextbazadedate');
+        
+        INSERT INTO `dbfirme`.`categorii` (`idCategoria`, `idSubdomeniu`, `categoria`) VALUES ('1', '1', 'categoriatestbazadedate');
+        
+        INSERT INTO `dbfirme`.`subiecte` (`idSubiect`, `idCategoria`, `subiect`) VALUES ('1', '1', 'subiecttestbazadedate');
+        
+        INSERT INTO `dbfirme`.`firme` (`idFirma`, `idSubiect`, `firma`, `cui`, `adresa`, `logo`, `telefon`, `mobil`, `fax`, `email`, `info`) VALUES ('1', '1', 'firmatestbazadedate', '742938479283479328', 'sibiu, romania , strada bihorului 2', 'fcsb.png', '0754357465', '74982749832749', '32132312312321', 'razvantrufin99x@gmail.com', 'dshdk ahsdjkahskd laksjdl kjaslkdjalkejlkj llnvlnlsfjdlaj a');
+        
+        
